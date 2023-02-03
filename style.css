@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  background-color: #171b36;
+  color: whitesmoke;
+  font-weight: bold;
+  height: 15vh;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBar ul li {
+  list-style: none;
+  padding: 0px 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+}
+
+.left-side {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.football-items-1,
+.football-items-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.football-items img {
+  max-height: 150px;
+  max-width: 150px;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.content h2,
+.content p {
+  text-transform: capitalize;
+}
+
+.written-content {
+  width: 75%;
+  margin: auto;
+}
+
+.right-side {
+  width: 35%;
+}
+
+.right-side div .btn-buy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-side-sub-div {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.big-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-image img {
+  height: 300px;
+  width: 300px;
+}
+
+button {
+  height: 50px;
+  width: 150px;
+  font-size: 0.79rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: white;
+}
+
+.connect-btn {
+  background-color: #d05529;
+}
+
+.buy-btn {
+  background-color: #2f3158;
+  font-size: 1.3rem;
+  /* margin-top: 10px; */
+}
+
+.buy-btn:hover {
+  background-color: rgb(55, 97, 55);
+  cursor: pointer;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}
+
+/* footer {
+        height: 10vh;
+    } */
+
+@media screen and (max-width: 850px) {
+  body {
+    /* width: min-content;
+    overflow: hidden; */
+  }
+
+  header {
+    justify-content: start;
+  }
+
+  header .navBar {
+    display: none;
+  }
+
+  body {
+    /* background-color: red; */
+  }
+  main {
+    display: flex;
+    /* width: min-content;
+    height: max-content; */
+  }
+
+  .left-side {
+    /* width: 40%; */
+    align-items: flex-start;
+  }
+
+  .left-side .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 80%;
+  }
+
+  .right-side-sub-div {
+    justify-content: space-evenly;
+  }
+
+  .written-content {
+    width: auto;
+    margin: 0px;
+  }
+
+  .football-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .football-items-1,
+  .football-items-2 {
+    display: block;
+  }
+}
